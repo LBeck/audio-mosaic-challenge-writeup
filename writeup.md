@@ -6,6 +6,10 @@ There are three steps to this challenge. Once completed, your code will:
 * Play the associated sound when an image is clicked
 * Overlay a play/pause control on hover over an image and implement pause
 
+The Boston Globe mosaic served as inspiration for this project. When you're finished, you'll have made an alternate version of the "mosaic" view on the following page: [Boston Globe mosaic][bgm]
+[bgm]: http://www.bostonglobe.com/Page/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml 
+
+
 # Learning Objectives
 
 By the end of the challenge, you will have some experience with the following technical concepts:
@@ -25,10 +29,6 @@ By the end of the challenge, you will have some experience with the following te
 * embedding media into the HTML document using the HTML5 <audio> element
 * programmatically controlling embedded media with JS code, such as .play(), .stop(), and .pause (defined in the [nsIDOMHTMLMediaElement](https://developer.mozilla.org/en-US/docs/XPCOM_Interface_Reference/nsIDOMHTMLMediaElement) interface used to implement media elements.
 * using event listeners to play and stop sounds when the user clicks on particular DOM elements
-
-
-The Boston Globe mosaic served as inspiration for this project. When you're finished, you'll have made an alternate version of the "mosaic" view on the following page: [Boston Globe mosaic][bgm]
-[bgm]: http://www.bostonglobe.com/Page/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
 
 #Resources
 
