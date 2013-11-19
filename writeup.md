@@ -26,15 +26,14 @@ Intermediate
 
 
 The Boston Globe mosaic served as inspiration for this project. When you're finished, you'll have made an alternate version of the "mosaic" view on the following page: [Boston Globe mosaic][bgm]
-[bgm]: http://www.bostonglobe.com/Page/Boston/20
-11-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
+[bgm]: http://www.bostonglobe.com/Page/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
 
 Resources
 
 * [JavaScript language documentation] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Description of the HTML5 <audio> element](http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element)
 * [A list of media events associated with media playback](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Events/Media_events?redirectlocale=en-US&redirectslug=Web%2FGuide%2FDOM%2FEvents%2FMedia_events)
-*
+
 
 
 
