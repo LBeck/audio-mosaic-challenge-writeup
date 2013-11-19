@@ -1,14 +1,16 @@
+# Description
 In this challenge, you're going to create a mosaic with photos and associated sound clips. Instead of uploading files, you'll be using Instagram pics and sound clips from the Boston Globe.
-
 There are three steps to this challenge. Once completed, your code will:
 
 * Display a grid of images from a data source (in this case, the Boston Globe)
 * Play the associated sound when an image is clicked
 * Overlay a play/pause control on hover over an image and implement pause
 
+# Learning Objectives
+
 By the end of the challenge, you will have some experience with the following technical concepts:
 
-Basic
+## Basic
 * defining variables that contain Strings, Functions and Objects
 * declaring variables with the var keyword to prevent them from being defined at the global scope
 * passing functions as arguments to other functions
@@ -16,7 +18,7 @@ Basic
 * grouping related functions into objects to avoid namespace collisions
 * understanding 'this' in the context of a function
 
-Intermediate
+## Intermediate
 * writing JS functions to create links to source data via a baseURL variable and an array of strings
 * using JS and HTML data attributes to render an item from an HTML template
 * rendering HTML to the DOM
@@ -28,7 +30,7 @@ Intermediate
 The Boston Globe mosaic served as inspiration for this project. When you're finished, you'll have made an alternate version of the "mosaic" view on the following page: [Boston Globe mosaic][bgm]
 [bgm]: http://www.bostonglobe.com/Page/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
 
-Resources
+#Resources
 
 * [JavaScript language documentation] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Description of the HTML5 <audio> element](http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element)
