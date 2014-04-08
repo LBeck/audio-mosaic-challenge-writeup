@@ -1,5 +1,7 @@
 // ►
+
 // Source Data
+// (Leave as is for this challenge)
 
 var mosaicItemNames = [
   "shower",
@@ -44,43 +46,25 @@ var mosaicItemNames = [
   "rain"
 ]
 
-var mosaicItemPicNames = [
-"Deane",
-"Deane3",
-"Deane4",
-"Deane5",
-"Deane6",
-"Deane7",
-"Deane8",
-"Deane9",
-"ClaudiaMonicaLucia",
-"ClaudiaMonicaLucia2",
-"ClaudiaMonicaLucia3",
-"DavidWeinberg_KatyaApekina",
-"DavidWeinberg2",
-"DavidWeinberg3",
-"DavidWeinberg4"
-]
-
-// var baseUrl = "http://cache.boston.com/multimedia/graphics/projectFiles/bgInstagram/"
-
-var basePicUrl = "http://www.luisabeck.com/test/StrangersGallery/"
+var baseUrl = "http://cache.boston.com/multimedia/graphics/projectFiles/bgInstagram/"
 // ---
 
-// Render item from template
-var renderMosaicItem = function(audioName, picName) {
+// Renders the mosaic item from the HTML template
+var renderMosaicItem = function(name) {
   var html = mosaicItemTemplate
-  html = html.replace("{{image-url}}", imageUrl(picName))
-  html = html.replace("{{audio-url}}", audioUrl(audioName))
+  html = html.replace("{{image-url}}", imageUrl(name))
+  html = html.replace("{{audio-url}}", audioUrl(name))
   return html
 }
 
-var imageUrl = function(mosaicItemPicName) {
-  return basePicUrl + mosaicItemPicName + ".jpg"
+// returns the image URL
+var imageUrl = function(mosaicItemName) {
+  return baseUrl + "images/" + mosaicItemName + ".jpg"
 }
 
-var audioUrl = function(mosaicItemPicName) {
-  return basePicUrl + "sounds/" + mosaicItemPicName + ".ogg"
+// returns the audio URL
+var audioUrl = function(mosaicItemName) {
+  return baseUrl + "sounds/" + mosaicItemName + ".ogg"
 }
 
 // Mosaic item template source
@@ -93,7 +77,7 @@ var mosaicItemTemplate =
 // ---
 
 // Render the mosaic html
-var mosaicHtml = mosaicItemPicNames.map(renderMosaicItem).join("\n")
+var mosaicHtml = mosaicItemNames.map(renderMosaicItem).join("\n")
 
 // Render the mosaic to the DOM
 document.querySelector('.mosaic').innerHTML = mosaicHtml
@@ -102,25 +86,25 @@ document.querySelector('.mosaic').innerHTML = mosaicHtml
 
 var clipPlayer = {}
 
-clipPlayer.activeMosiacEl = null
+clipPlayer.activeMosaicEl = null
 
 clipPlayer.play = function(mosaicEl) {
   this.stop()
-  this.activeMosiacEl = mosaicEl
-  this.activeMosiacEl.classList.add('active')
+  this.activeMosaicEl = mosaicEl
+  this.activeMosaicEl.classList.add('active')
   this.activeAudioEl().play()
 }
 
 clipPlayer.stop = function() {
-  if (!this.activeMosiacEl) return
-  this.activeMosiacEl.classList.remove('active')
+  if (!this.activeMosaicEl) return
+  this.activeMosaicEl.classList.remove('active')
   this.activeAudioEl().pause()
   this.activeAudioEl().currentTime = 0
-  this.activeMosiacEl = null
+  this.activeMosaicEl = null
 }
 
 clipPlayer.activeAudioEl = function() {
-  return this.activeMosiacEl.querySelector('audio')
+  return this.activeMosaicEl.querySelector('audio')
 }
 
 // ---

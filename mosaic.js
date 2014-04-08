@@ -48,7 +48,6 @@ var mosaicItemNames = [
 ]
 
 // Base URL to retrieve data from the Boston Globe's server
-// (Leave as is for this challenge)
 var baseUrl = "http://cache.boston.com/multimedia/graphics/projectFiles/bgInstagram/"
 
 // ---
@@ -71,7 +70,6 @@ var audioUrl = function(mosaicItemName) {
 
 // retrieve the mosaic item template source and assign it to a variable
 var mosaicItemTemplate =
-
 
 // ---
 
