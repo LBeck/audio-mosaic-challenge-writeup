@@ -8,5 +8,4 @@ Proposed order of completion:
 
 Inspired by this [Boston Globe mosaic][bgm]
 
-[bgm]: http://www.bostonglobe.com/Page/Boston/20
-11-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
+[bgm]: http://www.bostonglobe.com/Page/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2012/11/bgInstagram/instagram.xml
