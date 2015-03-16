@@ -19,6 +19,22 @@ var mosaicItemNames = [
    "Yay"
 ]
 
+var mosaicItemNameMouseon = [
+  // "tether", 
+  "musical_chair_circuit_on",
+  "vending1_on",
+  // "HN_tinfoil_light1",
+  // "tetherball",
+  "tinfoil_on",
+   // "switch",
+  "mechanical_finger_on",
+    "tape_on",
+  "tapeDoor_on",
+  "tether_on",
+  "vending2_on",
+   "Yay_on"
+]
+
 var baseUrl = "file:///Users/luisabeck/Desktop/audio-mosaic-explo-test/"
 // ---
 
@@ -26,6 +42,7 @@ var baseUrl = "file:///Users/luisabeck/Desktop/audio-mosaic-explo-test/"
 var renderMosaicItem = function(name) {
   var html = mosaicItemTemplate
   html = html.replace("{{image-url}}", imageUrl(name))
+  html = html.replace("{{image-url-on}}", imageUrlon(name))
   html = html.replace("{{audio-url}}", audioUrl(name))
   return html
 }
@@ -33,6 +50,11 @@ var renderMosaicItem = function(name) {
 // returns the image URL
 var imageUrl = function(mosaicItemName) {
   return baseUrl + "images/" + mosaicItemName + ".jpg"
+}
+
+// returns the image URL for mouseover image
+var imageUrlon = function(mosaicItemNameMouseon) {
+  return baseUrl + "images/mouseon/" + mosaicItemNameMouseon + ".jpg"
 }
 
 // returns the audio URL

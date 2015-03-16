@@ -58,3 +58,12 @@ body {
 .mosaic-item.active .playing {
   visibility: visible;
 }
+
+
+.image_off, .mosaic-item:hover .image_on{
+   display:none
+}
+.image_on, .mosaic-item:hover .image_off{
+   display:block
+}
+
