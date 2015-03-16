@@ -4,49 +4,22 @@
 // (Leave as is for this challenge)
 
 var mosaicItemNames = [
-  "shower",
-  "blessed",
-  "sisterGrave",
-  // "graduation", // broken :(
-  "cops",
-  "car",
-  "pool",
-  "dogMedal",
-  "drawing",
-  "danceOnCop",
-  "reading",
-  "racoon",
-  "communion",
-  "familyThree",
-  "vote",
-  "atParade",
-  "grocery",
-  "splitPic",
-  "family",
-  "bag",
-  "cake",
-  "outsideCouch",
-  "mayorOfHancock",
-  "flan",
-  "foursome",
-  "puppy",
-  "daughter",
-  "fullMoon",
-  "rosa",
-  "letters",
-  "signs",
-  "walkingDog",
-  "livingRoom",
-  "voted",
-  "lunchtime",
-  "burialGround",
-  "baptism",
-  "cartoons",
-  "muscles",
-  "rain"
+  // "tether", 
+  "musical_chair_circuit",
+  "vending1",
+  // "HN_tinfoil_light1",
+  // "tetherball",
+  "tinfoil",
+   // "switch",
+  "mechanical_finger",
+    "tape",
+  "tapeDoor",
+  "tether",
+  "vending2",
+   "Yay"
 ]
 
-var baseUrl = "http://cache.boston.com/multimedia/graphics/projectFiles/bgInstagram/"
+var baseUrl = "file:///Users/luisabeck/Desktop/audio-mosaic-explo-test/"
 // ---
 
 // Renders the mosaic item from the HTML template
@@ -64,7 +37,7 @@ var imageUrl = function(mosaicItemName) {
 
 // returns the audio URL
 var audioUrl = function(mosaicItemName) {
-  return baseUrl + "sounds/" + mosaicItemName + ".ogg"
+  return baseUrl + "sounds/" + mosaicItemName + ".wav"
 }
 
 // Mosaic item template source
